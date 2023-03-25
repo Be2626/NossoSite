@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Meu Site</title>
+
+    <style>
+		button {
+          width: 150px;
+          height: 50px;
+		  display: inline-block;
+		  padding: 15px 25px;
+		  font-size: 24px;
+		  cursor: pointer;
+		  text-align: center;
+		  text-decoration: none;
+		  outline: none;
+		  color: #000000;
+		  background-color:tomato;
+		  border: none;
+		  border-radius: 15px;
+		 
+		}
+
+		button:hover {
+			background-color: rgb(244, 83, 55);
+			color: #fff;
+			text-decoration: none;
+		}
+
+		button:active {
+			background-color: tomato;
+			transform: translateY(4px);
+			color: #fff;
+			text-decoration: none;
+		}
+	</style>
+
+<style>
+    body {
+        background-color: rgb(233, 155, 155);
+    }
+</style>
+    
+</head>
+<body>
+
+	<h1 style="color:Tomato"> Bem-vinda ao nosso site &#128149;</h1>
+	<p>Site desenvolvido por Bernardo para Bia &#128140;.</p>
+
+	<p>Acesse todas as fotos aqui &hearts;</p>
+
+	<p><a href="https://drive.google.com/drive/folders/1h3U2d5F0Uv3DV9_hslm7MoJ6NDQVUaX3?usp=share_link">Veja nossas fotinhas</a></p>
+
+	<h2>Essas são algumas das nossas fotos &#128248; </h2>
+
+	<img src="primeira.jpg" alt="Di cria" style="border: 2px solid red;" width="300">
+
+    <p></p>
+
+    <button class="button" onclick="exibirTexto()">Detalhes</button>
+	<p id="meuTexto"></p>
+
+	<script>
+		function exibirTexto() {
+			document.getElementById("meuTexto").innerHTML = "Nossa primeira fotinha,Tirada no dia 26/10/2022 (meu aniversário)";
+		}
+	</script> 
+	
+</body>
+</html>
+
